@@ -13,9 +13,8 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxt/image",
   ],
-  plugins: [ "~/plugins/apollo",
-    {src: '~/plugins/element-ui', ssr: false},
-    {src: '~/plugins/vee-validate.js', ssr: true},
+  plugins: [ 
+    {src: '~/plugins/apollo', ssr: false}   
   ],
   runtimeConfig: {
     public: {
