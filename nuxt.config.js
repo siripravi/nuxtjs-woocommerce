@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
   ],
   plugins: [ 
-    {src: '~/plugins/apollo', ssr: false}   
+   
   ],
   runtimeConfig: {
     public: {
