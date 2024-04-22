@@ -25,16 +25,7 @@ query Product($id: ID!) {
       salePrice
       regularPrice
       databaseId
-      allPaColors {
-        nodes {
-          name
-        }
-      }
-      allPaSizes {
-        nodes {
-          name
-        }
-      }
+     
       variations {
         nodes {
           databaseId
