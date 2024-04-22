@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
   ],
   plugins: [ 
-   
+    {src: '~/plugins/apollo', ssr: false}   
   ],
   runtimeConfig: {
     public: {
@@ -41,11 +41,11 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },
   },
-  algolia: {
+/*  algolia: {
     apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,
     instantSearch: { theme: "algolia" },
-  },
+  },*/
   apollo: {
     authType: "Session",
     authHeader: "woocommerce-session",
