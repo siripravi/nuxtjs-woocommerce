@@ -13,7 +13,10 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxt/image",
   ],
-  plugins: ["~/plugins/apollo"],
+  plugins: [ "~/plugins/apollo",
+    {src: '~/plugins/element-ui', ssr: false},
+    {src: '~/plugins/vee-validate.js', ssr: true},
+  ],
   runtimeConfig: {
     public: {
       graphqlURL: process.env.PUBLIC_GRAPHQL_URL,
