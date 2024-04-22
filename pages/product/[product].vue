@@ -1,5 +1,7 @@
 <template>
+  <div>
   <ProductsSingleProduct :id="route.query.id" :slug="route.params.product" />
+</div>
 </template>
 
 <script setup>
