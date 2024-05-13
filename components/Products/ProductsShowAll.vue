@@ -39,8 +39,8 @@ const config = useRuntimeConfig();
 
 const products = computed(() => {
   return (
-    allCategoryProducts.value?.productCategory?.products?.nodes ||
-    allProducts.value?.products?.nodes ||
+    allCategoryProducts?.productCategory?.products?.nodes ||
+    allProducts?.products?.nodes ||
     []
   );
 });
