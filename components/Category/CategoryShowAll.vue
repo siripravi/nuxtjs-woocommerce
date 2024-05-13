@@ -1,5 +1,5 @@
 <template>
-  <div v-if="data.productCategories">
+  <div v-if="productCategories">
     <section class="bg-white">
       <div class="flex justify-center align-middle flex-col md:flex-row">
         <template v-for="nodes in data.productCategories">
